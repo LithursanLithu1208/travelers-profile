@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ef4d06acb6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+
+        /* toggler colour */
+    .navbar-toggler {
+        border-color: red;
+    }
+    
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="red" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E'); 
+    }
+
+
+
+    @media (min-width: 768px) {
+
+      .profile-header img.profile-img {
+        width: 160px;
+        height: 160px;
+        bottom: -80px;
+      }
+
+    }
+
+</style>
+
+</head>
+<body>
+    <!-- nav bar -->
+<div class="bg-white">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                  <a class="d-flex text-decoration-none" href="##">
+                  <img class=" mt-3" src="img/Logo.png" alt="logo" style="width: 80%;">
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item me-5">
+                    <a class="nav-link  fs-5 fw-bold"  href="###">Home</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link  fs-5 fw-bold" href="###">Travel Package</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link fs-5 fw-bold" href="###">About Us</a>
+                  </li>
+                  
+                  <li class="nav-item me-5">
+                    <a class="nav-link fs-5 fw-bold" href="###">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+  </div>
+    </div>
+
+    <!-- header -->
+    <header class="mb-4">
+        <!-- Profile Header -->
+        <div class="profile-header position-relative align-items-center">
+          <!-- Background Image -->
+          <img src="img/headerImg.png" alt="Travel Background" class=" img-fluid" style=" width: 100%; height: 400px; object-fit: cover;">
+          <!-- Profile Image -->
+           <div class="profile-img " style="  position: absolute; bottom: -60px; left: 50%; transform: translateX(-50%);">
+            <img src="img/profile.jpeg" alt="Profile"  style=" width: 130px; height: 130px; border-radius: 50%; border: 3px solid black;"  >
+            <span class="ps-2 pt-1" style="position: absolute; background: #686868; width: 30px; height: 30px;  border-radius: 50%; bottom: 1px; right: 18px;"><i class="fa-solid fa-pen"></i></span>
+           </div>
+        </div>
+    </header>
+      
+        <!-- Profile Information -->
+        <div class="container">
+            <div class=" row " style="margin-top: 100px; " >
+                <div class="row">
+                    <div class=" col-12 text-center">
+                        <h2>John Doe.</h2>
+                        <p>john.doe@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <!-- form container -->
+        <div class="container ">
+            <div class="row ms-2">
+                <p class="fw-bold fs-2 fs-md-1">Edit Profile</p>
+            </div>
+            <!-- form -->
+            <div class="container d-flex justify-content-center" >
+                <form action="##" method="post"  >
+
+                    <div class="my-3">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control border-3px" name="name" id="name" placeholder="michael joe" required style="width: 250px;">
+                        <div class="invalid-feedback">
+                          Enter your name.
+                        </div>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="Email">Email</label>
+                        <input type="email" class="form-control border-3px" name="email" id="email" placeholder="michael.joe@xmail.com" required style="width: 250px;" >
+                        <div class="invalid-feedback">
+                          Enter  valid email address.
+                        </div>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="Number">Phone number</label>
+                        <input type="number" class="form-control border-3px" name="phone" id="phone" placeholder="******" required pattern="\d{10}" style="width: 250px;">
+                        <div class="invalid-feedback">
+                          Enter valid 10-digit phone number.
+                        </div>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="Password">Password</label>
+                        <input type="email" class="form-control border-3px" name="email" id="email" placeholder="*******" required style="width: 250px;">
+                        <div class="invalid-feedback">
+                          Enter  valid Password.
+                        </div>
+                    </div>
+    
+                    <div class="text-center my-5 ">
+                        <button type="submit" class="btn btn-danger text-white rounded-3 me-2 " data-bs-toggle="modal" data-bs-target="#exampleModal" style="border: red solid; width: 80px;">Save</button>
+                        <button type="submit" class="btn btn-white text-danger rounded-3 ms-2" style="border: red solid; width: 80px;">Cancel</button>
+                    </div>
+    
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <!-- alart for succeccfull save -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 fw-bold" >Alert</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    From Successfully saved!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary text-white bg-danger" data-bs-dismiss="modal" style="width: 112px; height: 40px;">Ok</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    
+
+
+
+
+
+    <!-- footer -->
+    <div  class=" bg-white position-relative  p-5 " style=" margin-top: 210px; box-shadow : 0px -4px 25px 0px #00000040;">
+
+        <!-- top part -->
+        <div class="position-absolute white rounded-3 text-center py-1 px-3 bg-white " style="position: absolute; top: -5%; left: 50%; transform: translate(-50%, -50%); box-shadow: 0px 4px 25px 0px #00000040;">
+                <div class="d-flex ">
+                    <img src="img/Rectangle 13.png" alt="Bird icon representing notifications"  style="width: 150px;height: 150px;" class="d-none d-sm-block">
+                    <div class="ms-3 d-flex flex-column justify-content-center">
+                    <span class="text-primary text-start fw-bold">News Letters</span>
+                        <h5 class="fw-bold text-danger text-nowrap">
+                            Get Our Every Single Notification 
+                        </h5>
+                        <form class="d-flex justify-content-center align-items-center mt-3 pb-2" novalidate>
+                            <input type="email" class="form-control w-75 rounded me-2 border-0 bg-danger-subtle" placeholder="Enter your email here" required>
+                            <button class="btn btn-danger rounded">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            
+        </div>
+                <!-- for chat option -->
+                <a href="##" class="position-absolute d-none d-sm-block" style="right: 0;">
+                    <img src="img/chat.png" alt="chat" style="height: 80px; width: 40px;" >
+                </a>
+                <!-- top -->
+                <button class=" text-white d-block d-sm-none position-absolute text-center d-flex justify-content-center " id="backToTopBtn" style="border-radius: 50%; height: 34px; width: 34px; left: 5px; top: 370px; border: none; background: #ED1C25;  "><i class="fa-solid fa-chevron-up" style="color: #ffffff; font-size: 30px;"></i></button>
+                
+
+
+
+        <!-- footer bottom part -->
+        <div class="container ">
+                    <a class=" text-decoration-none d-none d-sm-block" href="##">
+                    <img class=" mt-3" src="img/Logo.png" alt="logo" style="width: 12%;">
+                    </a>
+                    <!-- for mobile -->
+                    <a class=" text-decoration-none d-block d-sm-none" href="##">
+                        <img class=" mt-3" src="img/Logo.png" alt="logo" style="width: 30%;">
+                    </a>
+            <div class="row align-items-start text-center">
+                <div class=" col-md-5 col-lg-4 text-white">
+                    <div class="text-dark fs-6 mb-3" style="text-align:justify">
+                    At Trezzert, our mission is to empower our guests by providing uniquely personalized travel experiences throughout Sri Lanka.
+                        We believe that travel should be about exploration and personal growth. 
+                        Our dedicated team ensures each journey is thoughtfully curated to meet the specific desires and needs of our clients, 
+                    ensuring every adventure is as unique as our travelers.
+                    </div>
+                    <div class="d-block d-sm-none mb-3">
+                        <h5 class="text-uppercase text-danger fw-bold">
+                            Follow Us
+                        </h5>
+                        <a href="###"class="me-3 text-dark fs-4"><img src="img/whatsapp.png" alt="whatsapp" style="width: 30px;height: 30px;"></a>
+                        <a href="###"class="me-3 text-dark fs-4"><img src="img/facebook.png" alt="facebook" style="width: 30px;height: 30px;"></a>
+                        <a href="###"class="me-3 text-dark fs-4"><img src="img/linkedin.png" alt="linkedin" style="width: 30px;height: 30px;"></a>
+                        <a href="###"class="me-3 text-dark fs-4"><img src="img/instagram.png" alt="instagram" style="width: 30px;height: 30px;"></a>
+                    </div>
+                    
+                </div>
+                <div class="col-md-7 col-lg-8 text-center">
+                    <div class="row mt-md-5 mt-lg-0">
+                        <div class=" col-md-5 col-lg-4 mb-4 p-1">
+                            <h5 class="text-uppercase text-danger fw-bold">Quick Link</h5>
+                
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="##" class=" text-decoration-none text-dark" >About</a>
+                                </li>
+                                <li>
+                                    <a href="##" class="text-decoration-none text-dark">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="##" class=" text-decoration-none text-dark">Terms and Condition</a>
+                                </li>
+                                <li>
+                                    <a href="##"  class=" text-decoration-none text-dark">Return Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=" col-md-7 col-lg-4 mb-4 mb-md-0">
+                            <h5 class="text-uppercase text-danger fw-bold">Contact</h5>
+                
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-dark text-decoration-none">+94777538775</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" class="text-dark text-decoration-none" title="Mail">info@travel.com</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" class="text-dark text-decoration-none" title="Address"> No 032, main street, Colombo,<br> Sri Lanka.</a>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="col-md-10 col-lg-4 text-white text-center ms-sm-3 ms-lg-0 d-none d-sm-block">
+                            <h5 class="text-uppercase text-danger fw-bold">Follow Us</h5>
+                            <a href="###"class="me-3 text-dark fs-4"><img src="img/whatsapp.png" alt="whatsapp" style="width: 30px;height: 30px;"></a>
+                            <a href="###"class="me-3 text-dark fs-4"><img src="img/facebook.png" alt="whatsapp" style="width: 30px;height: 30px;"></a>
+                            <a href="###"class="me-3 text-dark fs-4"><img src="img/linkedin.png" alt="whatsapp" style="width: 30px;height: 30px;"></a>
+                            <a href="###"class="me-3 text-dark fs-4"><img src="img/instagram.png" alt="whatsapp" style="width: 30px;height: 30px;"></a>  
+                        </div> 
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- border -->
+            <b>
+            <hr class="m-0" style="border:  red solid 2px; "></b>
+        
+            <!-- Section: Copyright -->
+            <section class="pb-3 pt-0">
+                <div class="row d-flex align-items-center">
+                    <!-- Grid column -->
+                    <div class="col-md-8 col-lg-6 text-lg-start text-md-start text-sm-center">
+                    <!-- Copyright -->
+                    <div class="py-3 text-dark">
+                    Copyright © 2024 All rights reserved by:
+                        <a class="text-decoration-none text-dark" href="">Travel</a>
+                    </div>
+                    </div>
+                    <!--mobile responcive Grid column -->
+                    <div class="col-md-4 col-lg-6 text-lg-end text-sm-center">
+                        <div class="py-2 text-dark">
+                            Web Developed by 
+                            <a class="text-decoration-none text-dark" href="https://www.apexx.lk/">Apexx Private Limited</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+        </div>
+            
+    </div>
+
+
+
+    <!-- boostrab -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+     <!-- top button -->
+     <script>
+        var backToTopBtn = document.getElementById("backToTopBtn");
+        
+        backToTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+     </script>
+
+
+</body>
+</html>
